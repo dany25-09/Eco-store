@@ -5,22 +5,39 @@
   margin: 0;
 }
 
+html { /*se refiere al elemento raíz <html>*/
+  font-size: 62.5%; /*1rem equivalente a 10 píxeles (px)*/
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
 header {
   width: 100%;
   height: auto;
 }
-
-.header__navbar {
-  background-color: #FFEFE7;
+header .header__navbar {
   width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7C6A0A;
+  padding: 15px;
+}
+header p {
+  font-size: 2.6rem; /*16 px*/
+  padding-left: 30px;
+}
+header .header__navbar__icons {
+  display: flex;
+  gap: 15px;
+}
+header .header__navbar__icons button {
+  background: none;
+  border-style: none;
 }
 
-.main-section {
-  background-color: #FFEFE7;
-}
-
-.footer {
+footer {
   /*Variable local*/
   background-color: #FA9500;
   width: 100%;
