@@ -2,8 +2,10 @@ $primary-color: #FFEFE7;
 $secondary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
 $primary-text-color: #7C6A0A;
+$quaternion-color: #FA9500; 
 
-$font-stack: "IBM Plex Sans", sans-serif;;
+$font-stack: "IBM Plex Sans", sans-serif;
+$paragraph-size: 1.5rem;  /*15px*/
 
 
 * { /* Se refiere a todos los elementos del html*/
@@ -18,10 +20,12 @@ html { /*se refiere al elemento raíz <html>*/
     font-family: $font-stack;
 }
 
+/*header*/
 
 header{
     width: 100%;
     height: auto;
+
     .header__navbar{
         width: 100%;
         height: 100px;
@@ -31,10 +35,12 @@ header{
         color: $primary-text-color;
         padding: 15px;
     }
+
     p{
-        font-size: 2.6rem; /*16 px*/
+        font-size: 2.6rem; /*26 px*/
         padding-left: 30px;
     }
+
     .header__navbar__icons{
         display: flex;
         gap: 15px;
@@ -46,10 +52,83 @@ header{
     }  
 }
 
+/*Main primera sección*/
+.main-section__impact{
+    width: 100%;
+    color: $primary-text-color;
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+    .main-section__impact__info--section{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1{
+            font-size: 3rem; /*30px*/
+        }
+    
+        .main-section__impact__info--section__paragraph{
+            font-size: $paragraph-size; /*15px*/
+        }
+    
+        .main-section__impact__info--section__button{
+            width: 14vw;
+            height: 3vw;
+            padding: 10px;
+            background-color: $quaternion-color;
+            border-style: none;
+            border-radius: 35px;
+            color: white;
+        }
+        
+    }
+
+    img{
+        width: 25vw;
+        border-radius: 14px;
+    }
+    
+}
 
 footer{
-    $background: #FA9500; /*Variable local*/
-    background-color: $background;
+    background-color: $quaternion-color;
     width: 100%;
     height: 250px;
+}
+
+
+/*Main segunda sección*/
+.main-section__product{
+    width: 100%;
+    height: auto;
+    // background-color: pink;
+    padding: 60px;
+
+    h2{
+        color: $primary-text-color;
+        font-size: 2.2rem;
+        font-weight: 400;
+        padding-bottom: 40px;
+    }
+
+    .main-section__product__healthcare__card-section__product-card{
+        width: 15vw;
+        height: auto;
+        background-color: $secondary-color;
+        color: $primary-text-color;
+        padding: 20px;
+        border-radius: 8px;
+
+        img{
+            width: 150px;
+            height: 200px;
+            background-size: cover; /*la imagen se escala automáticamente para que cubra completamente el área del elemento*/
+            background-position: center; /*Al aumentar el viewport la imagen siempre se mantendrá en el centro*/
+            background-repeat: no-repeat;
+            border-radius: 6px;
+        }
+    }
 }
