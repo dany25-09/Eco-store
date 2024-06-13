@@ -7,6 +7,19 @@ $quaternary-color: #FA9500;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5rem;  /*15px*/
 
+@mixin flexCenter($direction, $content, $align){ /*direction es un argumento opcional*/
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;  /*Alinea los elementos horizontalmente*/
+    align-items: $align;        /*Alinea los elementos verticalmente*/
+}
+
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+    }
+}
 
 * { /* Se refiere a todos los elementos del html*/
     box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
@@ -29,9 +42,7 @@ header{
     .header__navbar{
         width: 100%;
         height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexCenter(row, space-between, center);  /*llamado de un mixin*/
         color: $primary-text-color;
         padding: 15px;
     }
@@ -45,10 +56,8 @@ header{
         display: flex;
         gap: 15px;
 
-        button{
-            background: none;
-            border-style: none;
-        }
+        @include buttonStyle();         /*Llamado al mixin*/
+
     }  
 }
 
@@ -57,13 +66,13 @@ header{
     width: 100%;
     color: $primary-text-color;
     padding: 0 45px;
-    display: flex;
-    justify-content: space-between;
+    @include flexCenter(row, space-between, start);  /*llamado de un mixin*/
     padding-top: 50px;
     
     .main-section__impact__info--section{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        @include flexCenter(column, space-evenly, start);  /*llamado de un mixin*/
         gap: 40px;
 
         h1{
@@ -74,12 +83,12 @@ header{
             font-size: $paragraph-size; /*15px*/
         }
     
+        @include buttonStyle();         /*Llamado al mixin*/ 
         .main-section__impact__info--section__button{
             width: 14vw;
             height: 3vw;
             padding: 10px;
             background-color: $quaternary-color;
-            border-style: none;
             border-radius: 35px;
             color: white;
         }
@@ -91,12 +100,6 @@ header{
         border-radius: 14px;
     }
     
-}
-
-footer{
-    background-color: $quaternary-color;
-    width: 100%;
-    height: 250px;
 }
 
 
@@ -117,14 +120,14 @@ footer{
         }
     
         .main-section__product__healthcare__card-section{
-            display: flex;
+            @include flexCenter(row, center, center);
             flex-wrap: wrap; /*los elementos se envuelvan a la siguiente línea si no hay suficiente espacio disponible*/
             width: auto;
             height: auto;
             column-gap: 200px;
             row-gap: 80px;
-            justify-content: center; /*alinea a traves del eje x (principal)*/
         }
+
         .main-section__product__healthcare__card-section__product-card{
             width: 18vw;
             min-width: 210px;
@@ -145,6 +148,10 @@ footer{
                 svg{
                     width: 20px;
                     height: 20px;
+                }
+
+                svg:hover{
+                    cursor: pointer;
                 }
             }
     
@@ -189,4 +196,10 @@ footer{
         }
     }
 
+}
+
+footer{
+    background-color: $quaternary-color;
+    width: 100%;
+    height: 250px;
 }
