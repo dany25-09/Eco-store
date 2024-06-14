@@ -70,8 +70,6 @@ header{
     padding-top: 50px;
     
     .main-section__impact__info--section{
-        // display: flex;
-        // flex-direction: column;
         @include flexCenter(column, space-evenly, start);  /*llamado de un mixin*/
         gap: 40px;
 
@@ -196,6 +194,47 @@ header{
         }
     }
 
+}
+
+
+/*Main tercera sección*/
+.main-section__product__info{
+    padding: 0px 60px;
+    .main-section__product__info__about-us{
+        @extend .main-section__product__healthcare; /*No funcionó jajaja*/
+        h2{
+            color: $primary-text-color;
+            font-size: 2.2rem;
+            font-weight: bold;
+            padding-bottom: 40px;
+        }
+        .main-section__product__info__about-us__mision-section{
+            @include flexCenter(row, space-evenly, center);      /*llamado del mixin*/
+            .main-section__product__info__about-us__earth{
+                width: 30vw;
+                @include flexCenter(row, space-evenly, center);      /*llamado del mixin*/
+                gap: 10px;
+                color: #E86424;
+
+                img{
+                    width: 120px;
+                    height: 120px;
+                    object-fit: contain; /*ajusta el contenido para que quepa completamente dentro del contenedor manteniendo la proporción original*/
+                }
+
+                p{
+                    text-align: center;     /*Alinea el texto horizontalmente*/
+                    align-items: center; /* Alineación vertical centrada */
+                    font-size: $paragraph-size;
+                    font-weight: 500;
+                }
+
+            }
+            .main-section__product__info__about-us__innovation{
+                @extend .main-section__product__info__about-us__earth
+            }
+        }
+    }
 }
 
 footer{
