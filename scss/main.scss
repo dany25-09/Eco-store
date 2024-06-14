@@ -1,25 +1,4 @@
-$primary-color: #FFEFE7;
-$secondary-color: #FFDAC6;
-$tertiary-color: #BABD8D;
-$primary-text-color: #7C6A0A;
-$quaternary-color: #FA9500; 
-
-$font-stack: "IBM Plex Sans", sans-serif;
-$paragraph-size: 1.5rem;  /*15px*/
-
-@mixin flexCenter($direction, $content, $align){ /*direction es un argumento opcional*/
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $content;  /*Alinea los elementos horizontalmente*/
-    align-items: $align;        /*Alinea los elementos verticalmente*/
-}
-
-@mixin buttonStyle{
-    button{
-        background: none;
-        border-style: none;
-    }
-}
+@import 'variables';
 
 * { /* Se refiere a todos los elementos del html*/
     box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
@@ -58,6 +37,10 @@ header{
 
         @include buttonStyle();         /*Llamado al mixin*/
 
+        .header__navbar-profile__phone{
+            display: none; /* Oculta el SVG móvil por defecto */
+        }
+
     }  
 }
 
@@ -83,8 +66,8 @@ header{
     
         @include buttonStyle();         /*Llamado al mixin*/ 
         .main-section__impact__info--section__button{
-            width: 14vw;
-            height: 3vw;
+            width: 150px;
+            height: 50px;
             padding: 10px;
             background-color: $quaternary-color;
             border-radius: 35px;

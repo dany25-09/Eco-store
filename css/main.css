@@ -42,6 +42,9 @@ header .header__navbar__icons button {
   background: none;
   border-style: none;
 }
+header .header__navbar__icons .header__navbar-profile__phone {
+  display: none; /* Oculta el SVG móvil por defecto */
+}
 
 /*Main primera sección*/
 .main-section__impact {
@@ -77,8 +80,8 @@ header .header__navbar__icons button {
   border-style: none;
 }
 .main-section__impact .main-section__impact__info--section .main-section__impact__info--section__button {
-  width: 14vw;
-  height: 3vw;
+  width: 150px;
+  height: 50px;
   padding: 10px;
   background-color: #FA9500;
   border-radius: 35px;

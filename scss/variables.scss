@@ -1,0 +1,23 @@
+$primary-color: #FFEFE7;
+$secondary-color: #FFDAC6;
+$tertiary-color: #BABD8D;
+$primary-text-color: #7C6A0A;
+$quaternary-color: #FA9500; 
+
+$font-stack: "IBM Plex Sans", sans-serif;
+$paragraph-size: 1.5rem;  /*15px*/
+
+
+@mixin flexCenter($direction, $content, $align){ /*direction es un argumento opcional*/
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;  /*Alinea los elementos horizontalmente*/
+    align-items: $align;        /*Alinea los elementos verticalmente*/
+}
+
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+    }
+}
