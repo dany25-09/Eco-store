@@ -84,6 +84,9 @@ header .header__navbar__icons button {
   border-radius: 35px;
   color: white;
 }
+.main-section__impact .main-section__impact__info--section .main-section__impact__info--section__button:hover {
+  transform: scale(1.1);
+}
 .main-section__impact img {
   width: 25vw;
   border-radius: 14px;
@@ -95,16 +98,16 @@ header .header__navbar__icons button {
   height: auto;
   padding: 60px;
 }
-.main-section__product .main-section__product__healthcare, .main-section__product .main-section__product__info .main-section__product__info__about-us, .main-section__product__info .main-section__product .main-section__product__info__about-us, .main-section__product .main-section__product__furniture {
+.main-section__product .main-section__product__healthcare, .main-section__product .main-section__product__furniture {
   padding-bottom: 40px;
 }
-.main-section__product .main-section__product__healthcare h2, .main-section__product .main-section__product__info .main-section__product__info__about-us h2, .main-section__product__info .main-section__product .main-section__product__info__about-us h2, .main-section__product .main-section__product__furniture h2 {
+.main-section__product .main-section__product__healthcare h2, .main-section__product .main-section__product__furniture h2 {
   color: #7C6A0A;
   font-size: 2.2rem;
   font-weight: 500;
   padding-bottom: 40px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section {
   /*direction es un argumento opcional*/
   display: flex;
   flex-direction: row;
@@ -117,7 +120,7 @@ header .header__navbar__icons button {
        column-gap: 200px;
   row-gap: 80px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card {
   width: 18vw;
   min-width: 210px;
   height: 370px;
@@ -127,21 +130,21 @@ header .header__navbar__icons button {
   border-radius: 8px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 10px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg {
   width: 20px;
   height: 20px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__svg svg:hover {
   cursor: pointer;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img {
   width: 100%;
   height: auto;
   background-size: cover; /*la imagen se escala automáticamente para que cubra completamente el área del elemento*/
@@ -151,18 +154,18 @@ header .header__navbar__icons button {
   justify-content: center; /*alinea a traves del eje x (principal)*/
   align-items: center; /*alinea a traves del eje y*/
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card .main-section__product__healthcare__card-section__product-card__img img {
   width: 90%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover; /*imagen cubre completamente el contenedor, manteniendo sus proporciones*/
   border-radius: 6px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card h3, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card h3, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card h3, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card h3 {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card h3, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card h3 {
   font-size: 1.5rem;
   padding: 10px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card p, .main-section__product .main-section__product__info .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card p, .main-section__product__info .main-section__product .main-section__product__info__about-us .main-section__product__healthcare__card-section__product-card p, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card p {
+.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section__product-card p, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card p {
   font-size: 1.3rem;
   padding: 0 10px;
 }
@@ -175,16 +178,13 @@ header .header__navbar__icons button {
 .main-section__product__info {
   padding: 0px 60px;
 }
-.main-section__product__info .main-section__product__info__about-us {
-  /*No funcionó jajaja*/
-}
 .main-section__product__info .main-section__product__info__about-us h2 {
   color: #7C6A0A;
   font-size: 2.2rem;
   font-weight: bold;
   padding-bottom: 40px;
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section {
+.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section {
   /*direction es un argumento opcional*/
   display: flex;
   flex-direction: row;
@@ -192,7 +192,7 @@ header .header__navbar__icons button {
   align-items: center; /*Alinea los elementos verticalmente*/
   /*llamado del mixin*/
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__earth, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__innovation {
+.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation {
   width: 30vw;
   /*direction es un argumento opcional*/
   display: flex;
@@ -203,18 +203,63 @@ header .header__navbar__icons button {
   gap: 10px;
   color: #E86424;
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__earth img, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__innovation img {
+.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth img, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation img {
   width: 120px;
   height: 120px;
   -o-object-fit: contain;
      object-fit: contain; /*ajusta el contenido para que quepa completamente dentro del contenedor manteniendo la proporción original*/
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__earth p, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mision-section .main-section__product__info__about-us__innovation p {
+.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth p, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation p {
   text-align: center; /*Alinea el texto horizontalmente*/
   align-items: center; /* Alineación vertical centrada */
   font-size: 1.5rem;
   font-weight: 500;
 }
+.main-section__product__info .main-section__product__info__gallery {
+  padding: 90px 0;
+}
+.main-section__product__info .main-section__product__info__gallery h2 {
+  color: #7C6A0A;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images {
+  /*direction es un argumento opcional*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*Alinea los elementos horizontalmente*/
+  align-items: center; /*Alinea los elementos verticalmente*/
+  /*llamado del mixin*/
+  padding-bottom: 80px;
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen {
+  width: 25vw;
+  height: 50vh;
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-1, .main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-3, .main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-2 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 30%;
+     object-position: center 30%;
+  border-radius: 16px;
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-1:hover, .main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-3:hover, .main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-2:hover {
+  transform: scale(1.1);
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-2 {
+  -o-object-position: center 70%;
+     object-position: center 70%;
+}
+.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen .gallery-images__imagen-3 {
+  -o-object-position: center 70%;
+     object-position: center 70%;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;

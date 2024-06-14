@@ -89,6 +89,9 @@ header{
             background-color: $quaternary-color;
             border-radius: 35px;
             color: white;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
         
     }
@@ -201,14 +204,14 @@ header{
 .main-section__product__info{
     padding: 0px 60px;
     .main-section__product__info__about-us{
-        @extend .main-section__product__healthcare; /*No funcionó jajaja*/
+        // @extend .main-section__product__healthcare; /*No funcionó jajaja*/
         h2{
             color: $primary-text-color;
             font-size: 2.2rem;
             font-weight: bold;
             padding-bottom: 40px;
         }
-        .main-section__product__info__about-us__mision-section{
+        .main-section__product__info__about-us__mission-section{
             @include flexCenter(row, space-evenly, center);      /*llamado del mixin*/
             .main-section__product__info__about-us__earth{
                 width: 30vw;
@@ -231,7 +234,48 @@ header{
 
             }
             .main-section__product__info__about-us__innovation{
-                @extend .main-section__product__info__about-us__earth
+                @extend .main-section__product__info__about-us__earth;
+            }
+        }
+    }
+    .main-section__product__info__gallery{
+        padding: 90px 0;
+
+        h2{
+            color: $primary-text-color;
+            font-size: 2.2rem;
+            font-weight: bold;
+            padding-bottom: 40px;
+        }
+
+        .main-section__product__info__gallery__gallery-images{
+            @include flexCenter(row, space-between, center);    /*llamado del mixin*/
+            padding-bottom: 80px;
+            .main-section__product__info__gallery__gallery-images__imagen{
+                width: 25vw;
+                height: 50vh;
+                .gallery-images__imagen-1{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    object-fit: cover; 
+                    object-position: center 30%;
+                    border-radius: 16px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+                .gallery-images__imagen-2{
+                    @extend .gallery-images__imagen-1;
+                    object-position: center 70%;
+                }
+
+                .gallery-images__imagen-3{
+                    @extend .gallery-images__imagen-1;
+                    object-position: center 70%;
+                }
             }
         }
     }
