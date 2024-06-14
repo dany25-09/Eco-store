@@ -214,10 +214,11 @@ header{
         .main-section__product__info__about-us__mission-section{
             @include flexCenter(row, space-evenly, center);      /*llamado del mixin*/
             .main-section__product__info__about-us__earth{
+                $text-color: #E86424; /*Variable local*/
                 width: 30vw;
                 @include flexCenter(row, space-evenly, center);      /*llamado del mixin*/
                 gap: 10px;
-                color: #E86424;
+                color: $text-color;
 
                 img{
                     width: 120px;
@@ -264,6 +265,7 @@ header{
                     border-radius: 16px;
                     &:hover{
                         transform: scale(1.1);
+                        transition-duration: 0.3s;
                     }
                 }
 
@@ -279,10 +281,55 @@ header{
             }
         }
     }
+    .main-section__product__info__location{
+        $text-color: #E86424; /*Variable local*/
+        color: $text-color;
+        .main-section__product__info__location__map{
+            @include flexCenter(row, center, center);
+            padding-bottom: 40px;
+            width: 100%;
+            height: auto;
+            img{
+                width: 95%;
+                height: 95%;
+                background-position: center;
+                background-repeat: no-repeat;
+                object-fit:contain; 
+            }
+        }
+        h3{
+            padding-left: 60px;
+            padding-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        p{
+            padding-left: 60px;
+            font-size: $paragraph-size;
+        }
+    }
 }
 
 footer{
     background-color: $quaternary-color;
     width: 100%;
-    height: 250px;
+    height: auto;
+    padding: 30px 40px;
+    color: white;
+    h3{
+        padding: 10px;
+        font-size: 2rem;
+    }
+    p{
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .footer__social-media{
+        @include flexCenter(row, center, center);
+        gap: 30px;
+        img{
+            width: 35px;
+            height: 35px;
+        }
+    }
 }
