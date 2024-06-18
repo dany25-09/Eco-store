@@ -22,7 +22,7 @@ header{
 /*Main primera sección*/
 .main-section__impact{
     min-width: 320px; /*320px es la dimensión más pequeñas de los celulares*/
-    @include flexCenter(column, space-between, start);  /*llamado de un mixin*/
+    @include flexCenter(column, space-between, center);  /*llamado de un mixin*/
     padding-top: 0px;
     padding-bottom: 50px;
 

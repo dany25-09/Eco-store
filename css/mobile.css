@@ -21,7 +21,7 @@ header .header__navbar__icons .header__navbar-profile__phone {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /*Alinea los elementos horizontalmente*/
-  align-items: start; /*Alinea los elementos verticalmente*/
+  align-items: center; /*Alinea los elementos verticalmente*/
   /*llamado de un mixin*/
   padding-top: 0px;
   padding-bottom: 50px;
