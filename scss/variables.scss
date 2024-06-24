@@ -8,7 +8,7 @@ $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5rem;  /*15px*/
 
 
-@mixin flexCenter($direction, $content, $align){ /*direction es un argumento opcional*/
+@mixin flexCenter($direction, $content, $align){ 
     display: flex;
     flex-direction: $direction;
     justify-content: $content;  /*Alinea los elementos horizontalmente*/
