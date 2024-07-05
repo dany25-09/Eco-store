@@ -53,8 +53,7 @@ header{
     padding: 20px 20px;
     .main-section__product__healthcare{
         .main-section__product__healthcare__card-section{
-            display: flex;
-            @include flexCenter(row, flex-start, stretch); /*Para que el contenido quepa*/
+            @include flexCenter(row, flex-start, start); /*Para que el contenido quepa*/
             overflow-x: scroll;
             overscroll-behavior-x: contain;
             scroll-snap-type: x proximity;

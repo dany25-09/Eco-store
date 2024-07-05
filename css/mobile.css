@@ -17,7 +17,6 @@ header .header__navbar__icons .header__navbar-profile__phone {
 /*Main primera sección*/
 .main-section__impact {
   min-width: 320px; /*320px es la dimensión más pequeñas de los celulares*/
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: column;
   justify-content: space-between; /*Alinea los elementos horizontalmente*/
@@ -27,7 +26,6 @@ header .header__navbar__icons .header__navbar-profile__phone {
   padding-bottom: 50px;
 }
 .main-section__impact .main-section__impact__img--section {
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: row;
   justify-content: center; /*Alinea los elementos horizontalmente*/
@@ -43,7 +41,6 @@ header .header__navbar__icons .header__navbar-profile__phone {
 }
 .main-section__impact .main-section__impact__info--section {
   order: 2;
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; /*Alinea los elementos horizontalmente*/
@@ -60,11 +57,9 @@ header .header__navbar__icons .header__navbar-profile__phone {
 }
 .main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section {
   display: flex;
-  /*direction es un argumento opcional*/
-  display: flex;
   flex-direction: row;
   justify-content: flex-start; /*Alinea los elementos horizontalmente*/
-  align-items: stretch; /*Alinea los elementos verticalmente*/
+  align-items: start; /*Alinea los elementos verticalmente*/
   /*Para que el contenido quepa*/
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -87,14 +82,12 @@ header .header__navbar__icons .header__navbar-profile__phone {
   padding: 0 20px;
 }
 .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section {
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/
   align-items: center; /*Alinea los elementos verticalmente*/
 }
 .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation {
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/
@@ -109,7 +102,6 @@ header .header__navbar__icons .header__navbar-profile__phone {
   padding-top: 20px;
 }
 .main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images {
-  /*direction es un argumento opcional*/
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/

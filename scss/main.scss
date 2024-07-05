@@ -13,7 +13,6 @@ html { /*se refiere al elemento raíz <html>*/
 }
 
 /*header*/
-
 header{
     width: 100%;
     height: auto;
@@ -179,7 +178,6 @@ header{
             color: white;
         }
     }
-
 }
 
 
@@ -241,7 +239,6 @@ header{
                 .gallery-images__imagen-1{
                     width: 100%;
                     height: 100%;
-                    background-position: center;
                     background-repeat: no-repeat;
                     object-fit: cover; 
                     object-position: center 30%;
