@@ -1,21 +1,21 @@
 @charset "UTF-8";
 /*15px*/
-header {
+.header {
   min-width: 320px; /*320px es la dimensión más pequeñas de los celulares*/
 }
-header p {
+.header__title {
   font-size: 3rem; /*26 px*/
   padding-left: 0px;
 }
-header .header__navbar__icons .header__navbar-profile, header .header__navbar__icons .header__navbar-wishlist, header .header__navbar__icons .header__navbar-cart {
+.header .navbar__buttons .button {
   display: none; /* Oculta todos los SVGs*/
 }
-header .header__navbar__icons .header__navbar-profile__phone {
+.header .navbar__buttons .button--phone {
   display: inline-block;
 }
 
 /*Main primera sección*/
-.main-section__impact {
+.main__impact {
   min-width: 320px; /*320px es la dimensión más pequeñas de los celulares*/
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ header .header__navbar__icons .header__navbar-profile__phone {
   padding-top: 0px;
   padding-bottom: 50px;
 }
-.main-section__impact .main-section__impact__img--section {
+.main__impact .main__containerImg {
   display: flex;
   flex-direction: row;
   justify-content: center; /*Alinea los elementos horizontalmente*/
@@ -36,10 +36,10 @@ header .header__navbar__icons .header__navbar-profile__phone {
   order: 1;
   padding-bottom: 20px;
 }
-.main-section__impact .main-section__impact__img--section img {
+.main__impact .main__containerImg .main__image {
   min-width: 280px;
 }
-.main-section__impact .main-section__impact__info--section {
+.main__impact .impact__info {
   order: 2;
   display: flex;
   flex-direction: column;
@@ -47,15 +47,15 @@ header .header__navbar__icons .header__navbar-profile__phone {
   align-items: center; /*Alinea los elementos verticalmente*/
   /*llamado de un mixin*/
 }
-.main-section__impact .main-section__impact__info--section h1 {
+.main__impact .impact__info .main__title {
   font-size: 2.6rem; /*30px*/
 }
 
 /*Main segunda sección*/
-.main-section__product {
+.main__product {
   padding: 20px 20px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section {
+.main__product .product__healthcare .product__cards, .main__product .product__furniture .product__cards {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; /*Alinea los elementos horizontalmente*/
@@ -69,25 +69,25 @@ header .header__navbar__icons .header__navbar-profile__phone {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.main-section__product .main-section__product__healthcare .main-section__product__healthcare__card-section .main-section__product__healthcare__card-section__product-card, .main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section .main-section__product__healthcare__card-section__product-card {
+.main__product .product__healthcare .product__cards .card, .main__product .product__furniture .product__cards .card {
   scroll-snap-align: center;
 }
-.main-section__product .main-section__product__furniture .main-section__product__healthcare__card-section__product-card {
+.main__product .product__furniture .card {
   background-color: #BABD8D;
   color: white;
 }
 
 /*Main tercera sección*/
-.main-section__product__info {
+.main__productInfo {
   padding: 0 20px;
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section {
+.main__productInfo .productInfo__aboutUs .aboutUs__mission {
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/
   align-items: center; /*Alinea los elementos verticalmente*/
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation {
+.main__productInfo .productInfo__aboutUs .aboutUs__mission .aboutUs__earth, .main__productInfo .productInfo__aboutUs .aboutUs__mission .aboutUs__innovation {
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/
@@ -95,42 +95,42 @@ header .header__navbar__icons .header__navbar-profile__phone {
   /*Para que el contenido quepa*/
   padding-bottom: 30px;
 }
-.main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__earth p, .main-section__product__info .main-section__product__info__about-us .main-section__product__info__about-us__mission-section .main-section__product__info__about-us__innovation p {
+.main__productInfo .productInfo__aboutUs .aboutUs__mission .aboutUs__earth .aboutUs__paragraph, .main__productInfo .productInfo__aboutUs .aboutUs__mission .aboutUs__innovation .aboutUs__paragraph {
   width: 200px;
 }
-.main-section__product__info .main-section__product__info__gallery {
+.main__productInfo .productInfo__gallery {
   padding-top: 20px;
 }
-.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images {
+.main__productInfo .productInfo__gallery .gallery__container {
   display: flex;
   flex-direction: column;
   justify-content: center; /*Alinea los elementos horizontalmente*/
   align-items: center; /*Alinea los elementos verticalmente*/
   gap: 40px;
 }
-.main-section__product__info .main-section__product__info__gallery .main-section__product__info__gallery__gallery-images .main-section__product__info__gallery__gallery-images__imagen {
+.main__productInfo .productInfo__gallery .gallery__container .container__image {
   width: 80%;
 }
-.main-section__product__info .main-section__product__info__location .main-section__product__info__location__map {
+.main__productInfo .productInfo__location .location__map {
   height: 350px;
 }
-.main-section__product__info .main-section__product__info__location .main-section__product__info__location__map img {
+.main__productInfo .productInfo__location .location__map .map__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-section__product__info .main-section__product__info__location h3 {
+.main__productInfo .productInfo__location .location__info {
   padding-left: 0px;
   padding-bottom: 10px;
   font-size: 1.8rem;
   font-weight: 500;
 }
-.main-section__product__info .main-section__product__info__location p {
+.main__productInfo .productInfo__location .location__paragraph {
   padding-left: 0px;
   font-size: 1.2rem;
 }
 
-footer .footer__social-media {
+.footer .footer__socialMedia {
   padding-top: 60px;
 }/*# sourceMappingURL=mobile.css.map */
